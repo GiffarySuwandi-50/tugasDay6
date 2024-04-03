@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundapp2"
+    android:layout_gravity="center_vertical"
+    android:fillViewport="true"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/image_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_hp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/image_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Nama HP" />
+
+    <TextView
+        android:id="@+id/text_android_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_hp_name"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:text="Versi Android: " />
+
+    <TextView
+        android:id="@+id/text_screen_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_android_version"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Ukuran Layar: " />
+
+    <TextView
+        android:id="@+id/text_resolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_screen_size"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Resolusi: " />
+
+    <TextView
+        android:id="@+id/text_processor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_resolution"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Prosesor: " />
+
+    <TextView
+        android:id="@+id/text_ram_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_processor"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="RAM dan Penyimpanan: " />
+
+    <TextView
+        android:id="@+id/text_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_ram_storage"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Kamera: " />
+
+    <TextView
+        android:id="@+id/text_usb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_camera"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="USB: " />
+
+    <TextView
+        android:id="@+id/text_nfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_usb"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="NFC: " />
+
+    <TextView
+        android:id="@+id/text_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_below="@id/text_nfc"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Baterai: " />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/text_battery"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Harga: " />
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/text_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Bagikan" />
+    />
+
+    </LinearLayout>
+</ScrollView>
